@@ -3,7 +3,7 @@ export default function handleResponseFromAPI(promise) {
     if (promise) {
       resolve();
     } else {
-      reject(Error);
+      reject(new Error({}));
     }
   }).then(() => ({ status: 200, body: 'Success' }))
     .finally(() => {
